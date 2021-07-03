@@ -39,6 +39,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Autor
 ---
 
- <img style="border-radius: 40px;" src="https://github.com/nicolasgandrade.png" width="100px;" alt=""/>
+ <img style="border-radius: 50%;" src="https://github.com/nicolasgandrade.png" width="100px;" alt=""/>
 
 Feito por Nicolas Guerrero 👋🏽 
