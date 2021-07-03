@@ -7,13 +7,15 @@
 
 ### Pré-requisitos
 
-Antes de iniciar a aplicação é necessário que tenha instalado o NodeJs e o MongoDB.
+Antes de iniciar a aplicação é necessário que tenha instalado o NodeJs e o MongoDB (este deve estar ativo para o funcionamento da aplicação).
 
 ### 🎲 Rodando o Servidor
 
 Para rodar o servidor na sua máquina, recomendo que use o nodemon, e aplique o comando "nodemon app.js" na raiz do projeto. Caso não tenha o nodemon instalado, use o comando "npm install -g nodemon", ou rode a aplicação com o próprio Node: "node app.js".
 
 Para acessar a aplicação, basta entrar na porta 8081 do localhost.
+
+Nota: O data-base no :seedling:MongoDB será criado automanticamente após a inicialização do aplicação.
 
 ### Rotas Principais
 <!--ts-->
