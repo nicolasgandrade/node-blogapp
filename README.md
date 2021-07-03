@@ -1,5 +1,5 @@
 # NodeJs BlogApp
-## 💚 Esse projeto consiste num blog criado em NodeJs com banco de dados em MongoDB
+## 💚 Blog criado em NodeJs com banco de dados em MongoDB
 
 <h4 align="center"> 
 	🚧  NodeJs BlogApp - Em construção...  🚧
