@@ -1,0 +1,47 @@
+{{#each errors}}
+
+	<div class="alert alet-danger">{{text}}</div>
+
+{{else}}
+
+{{/each}}
+
+<h2>New Post</h2>
+
+<div class="card">
+	<div class="card-body">
+		
+		<form action="/admin/posts/new" method="POST">
+			
+
+			<label for="title" class="mt-2">Title:</label>
+				<input type="text" name="title" class="form-control" required>
+
+			<label for="slug" class="mt-2">Slug:</label>
+				<input type="text" name="slug" class="form-control" required>
+
+			<label for="subtitle" class="mt-2">Subtitle:</label>
+				<input type="text" name="subtitle" class="form-control" required>
+
+			<label for="content" class="mt-2">Content:</label>
+				<textarea name="content" class="form-control" required></textarea>
+
+			<label for="category" class="mt-2">Category:</label>
+				<select name="category" class="form-select" required>
+					{{#each categories}}
+						<option value="{{_id}}">{{name}}</option>
+					{{else}}
+						<option value="">No categories registred yet!</option>
+					{{/each}}
+				</select>
+
+			<label for="read_time" class="mt-2">Reading time:</label>
+				<input type="text" name="read_time" class="form-control">
+
+			<button class="btn btn-success mt-4" type="submit">Create post:</button>
+		</form>
+
+	</div>
+</div>
+
+<!--Adicionar formatador rich text-->

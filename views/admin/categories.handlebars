@@ -1,0 +1,35 @@
+<h2>Categories:</h2>
+<hr>
+<a href="/admin/categories/add"><button class="btn btn-success">New category</button></a>
+
+{{#each categories}}
+
+	<div class="card mt-3">
+		<div class="card-body">
+			<div class="row">
+				<div class="col-10">
+					<h5>{{name}}</h4>
+					<small>/admin/categories/{{slug}}</small><br>
+					<small>Creation date: {{date}}</small>
+				</div>
+
+				<div class="col-1 align-self-center">
+					<a href="/admin/categories/edit/{{_id}}"><button class="btn btn-success" style={width:100px}><i class='bx bx-edit'></i></button></a><!--O {{_id}} pega o id de cada categoria-->
+				</div>
+
+				<div class="col-1 align-self-center">
+					<form action="/admin/categories/delete/{{_id}}" method="post">
+						<input type="hidden" name="id" value="{{_id}}">
+						<button type="submit" class="btn btn-danger"><i class='bx bx-trash'></i></button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+{{else}}
+
+	<h5 class='mt-3'>No categories to display... Try to add one!</h5>
+
+{{/each}}

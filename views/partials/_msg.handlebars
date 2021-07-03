@@ -1,0 +1,22 @@
+{{#if success_msg}}
+
+	<div class="alert alert-success alert-dismissible fade show" role="alert">
+		{{success_msg}}
+	</div>
+
+{{/if}}
+
+{{#if error_msg}}
+
+	<div class="alert alert-danger alert-dismissible fade show" role="alert">
+		{{error_msg}}
+	</div>
+
+{{/if}}
+
+<!--
+
+	As mensagens de erro e sucesso estão vindo das variáveis globais declaradas nos middlewares,
+	lá em res.locals.success_msg e res.locals.error_msg
+
+-->
