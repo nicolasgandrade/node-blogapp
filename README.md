@@ -40,7 +40,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ---
 
  <img style="border-radius: 50%;" src="https://github.com/nicolasgandrade.png" width="100px;" alt=""/>
- <br />
- <sub><b>Nicolas Guerrero</b></sub>🚀
 
 Feito por Nicolas Guerrero 👋🏽 
