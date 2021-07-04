@@ -1,23 +1,25 @@
 # NodeJs BlogApp
-## 💚 Blog criado em NodeJs com banco de dados em MongoDB
+## 💚 Blog App created with NodeJS and MongoDB
 
 <h4 align="center"> 
-	🚧  NodeJs BlogApp - Em construção...  🚧
+	🚧  NodeJs BlogApp - Under development...  🚧
 </h4>
 
-### Pré-requisitos
+### Requirements
 
-Antes de iniciar a aplicação é necessário que tenha instalado o NodeJs e o MongoDB (este deve estar ativo para o funcionamento da aplicação).
+Before running the application, you must have NodeJs and MongoDB installed. 
+Make sure the mongo server is up before starting.
 
-### 🎲 Rodando o Servidor
+### 🎲 Running the Server
 
-Para rodar o servidor na sua máquina, recomendo que use o nodemon, e aplique o comando "nodemon app.js" na raiz do projeto. Caso não tenha o nodemon instalado, use o comando "npm install -g nodemon", ou rode a aplicação com o próprio Node: "node app.js".
+You can run the app using node command:
+````node app.js````
 
-Para acessar a aplicação, basta entrar na porta 8081 do localhost.
+The blog is hosted on localhost port 8081.
 
-Nota: O data-base no :seedling:MongoDB será criado automanticamente após a inicialização do aplicação.
+Note: The database in MongoDB will be created automatically after the application starts.
 
-### Rotas Principais
+### Main Routes
 <!--ts-->
    * /
    * /categories
@@ -26,11 +28,11 @@ Nota: O data-base no :seedling:MongoDB será criado automanticamente após a ini
    * /admin/posts
 <!--te-->
 
-O acesso às rotas de administrador estão de livre acesso visto que *ainda* não foi aplicada autenticação de usuários ao Back End.
+Authentication settings are still being made.
 
-### 🛠 Tecnologias
+### 💻 Technologies
 
-As seguintes ferramentas foram usadas na construção do projeto:
+The following tools were used in the construction of the project:
 
 - NodeJs
 - Express
@@ -38,9 +40,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - MongoDB
 - Bootstrap
 
-### Autor
+### Author
 ---
 
  <img style="border-radius: 50%;" src="https://github.com/nicolasgandrade.png" width="100px;" alt=""/>
 
-Feito por Nicolas Guerrero 👋🏽 
+Made by Nicolas Guerrero 👋🏽 
