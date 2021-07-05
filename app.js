@@ -13,6 +13,7 @@ require('./models/Post')
 const Post = mongoose.model('posts')
 require('./models/Category')
 const Category = mongoose.model('categories')
+const users = require('./routes/user')
 
 
 //Config
@@ -123,7 +124,7 @@ app.get('/404', (req, res) => {
 //Secondary Routes
 app.use('/admin', admin)
 
-
+app.use('/users', users)
 
 //Localhost Port
 app.listen(8081, () => {
