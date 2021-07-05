@@ -30,9 +30,7 @@ Note: The database in MongoDB will be created automatically after the applicatio
    * /admin/posts
 <!--te-->
 
-Authentication settings are still being finalized. 
-
-So, if you wanna register an admin user, you need to change the code inside *routes/user.js* **from this:**
+If you want to register an admin user, you need to change the code inside *routes/user.js* **from this:**
 ````
 const newUser = new User({
                     name: req.body.name,
@@ -50,7 +48,7 @@ const newUser = new User({
                 })
 ````
 (lines 63/64 *routes/user.js*)
-and then, reload the app.
+and then, reload the app and **register the new admin user.**
 
 ### 💻 Technologies
 
