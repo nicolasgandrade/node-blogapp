@@ -14,6 +14,9 @@ const Post = mongoose.model('posts')
 require('./models/Category')
 const Category = mongoose.model('categories')
 const users = require('./routes/user')
+const bcrypt = require('bcryptjs')
+const passport = require('passport')
+require('./config/auth')(passport)
 
 
 //Config
@@ -24,6 +27,10 @@ const users = require('./routes/user')
 			resave: true,
 			saveUninitialized: true
 		}))
+
+		app.use(passport.initialize())
+		app.use(passport.session())
+
 		//Flash
 		app.use(flash())
 
@@ -31,6 +38,7 @@ const users = require('./routes/user')
 	app.use((req, res, next) => {
 		res.locals.success_msg = req.flash('success_msg')
 		res.locals.error_msg = req.flash('error_msg')
+		res.locals.error = req.flash('error')
 		next()
 	})
 
