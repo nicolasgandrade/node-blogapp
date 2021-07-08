@@ -23,7 +23,7 @@ require('./config/auth')(passport)
 
 	//Session
 		app.use(session({
-			secret: 'secret459012@!', //O ideal é colocar uma secret segura para melhorar a segurança da aplicação
+			secret: '12345',
 			resave: true,
 			saveUninitialized: true
 		}))
@@ -84,7 +84,6 @@ app.get('/post/:slug', (req, res) => {
 		if(post){
 			res.render('post/index', {post : post})
 		}else{
-			// req.flash('error_msg', 'Essa postagem não existe')
 			res.redirect('/404')
 		}
 	}).catch((err) => {
@@ -124,7 +123,6 @@ app.get('/categories/:slug', (req, res) => {
 
 
 app.get('/404', (req, res) => {
-	// res.send('Error 404!')
 	res.render('error/index')
 })
 
@@ -141,5 +139,3 @@ app.listen(8081, () => {
 })
 
 
-
-// Falta fazer uma 404 bonitinha
