@@ -1,9 +1,18 @@
 # NodeJs BlogApp
 ## 💚 Blog App created with NodeJS and MongoDB
 
-<h4 align="center"> 
+<!-- <h4 align="center"> 
 	🚧  NodeJs BlogApp - Under development...  🚧
-</h4>
+</h4> -->
+
+### Features
+- [x] Everybody is able to read posts
+- [x] Categories filter
+- [x] Register new user and admin account
+- [x] Login into your account
+- [x] Hashed passwords
+- [x] Admin options: Create, edit and remove posts and categories 
+- [x] Logout system
 
 ### Requirements
 
