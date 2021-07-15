@@ -24,7 +24,7 @@ Make sure the mongo server is up before starting.
 You can run the app using node command:
 ````node app.js````
 
-The blog is hosted on localhost port 8081.
+The blog is hosted on localhost port 8081 (localhost:8081).
 
 Note: The database in MongoDB will be created automatically after the application starts.
 
