@@ -74,4 +74,4 @@ The following tools were used in the construction of the project:
 
  <img style="border-radius: 50%;" src="https://github.com/nicolasgandrade.png" width="100px;" alt=""/>
 
-Made by Nicolas Guerrero 👋🏽 
+Made by Nicolas Guerrero👋
